@@ -1,17 +1,3 @@
-@keyframes upscale {
-50%
-    -webkit-transform: scale(1.5)
-    transform: scale(1.5)
-}
-
-.wobble {
-span
-    display: inline-block
-    pointer-events: none
-span.upscale
-    animation: upscale 0.5s 1
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -19,8 +5,8 @@ span.upscale
 }
 
 body {
-    background-color: rgb(228, 158, 111);
-    min-height: 2700px;
+    background-color: rgb(48, 189, 142);
+    min-height: 3000px;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -43,7 +29,7 @@ section:before {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(228, 158, 111), transparent);
+    background: linear-gradient(to top, rgb(48, 189, 142), transparent);
     z-index: 10000;
 }
 
@@ -95,27 +81,11 @@ section img {
     body {
         font-family: sans-serif;
         align-items: flex-start;
-        font-size: 10pt;
+        font-size: 15pt;
         font-weight: lighter;
-      }
-
-
-    #contact {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-
-    #email {
-        font-family: sans-serif;
-        color: rgb(0, 0, 0);
-    }
-
-    #phone {
-        font-family: sans-serif;
-        color: rgb(0, 0, 0);
     }
     
+    /* ---------Headers--------- */
     h1,
     h2 {
         text-align: center;
@@ -131,43 +101,213 @@ section img {
     
     h2 {
         margin-bottom: 0.25em;
-        border-bottom: black solid 1px;
+        border-bottom: papayawhip solid 2px;
         margin: 1rem 0;
         padding-bottom: 1rem;
         font-size: 6vw;
-}
+        color: papayawhip
 
+    }
+
+    h2:hover {
+        color:rgb(211, 67, 32)
+    }
+
+    /* --------Name------- */
     h1 {
         font-size: 10vw;
-        color: rgb(52, 103, 214);
+        margin-bottom: 0.1em;
     }
 
-#name3 {
-    font-family: sans-serif;
-    font-size: 4em;
-    margin-bottom: 2rem;
-    padding: 2rem;
-}
-
-h1 {
-    margin-bottom: 0.75em;
+    span {
+        display:inline-block;
+        padding:0;
+        margin: 0 -15px 0 -4px;
+        user-select: none !important;
+        transition-delay: 0.7s;
+        color: papayawhip;
     }
 
-#job-title {
-    font-family: sans-serif;
-    text-align: center;
-    font-size: large;
-}
+    span.space {
+        padding: 0 0px !important;
+        margin:0 0px;
+    }
 
-    p {
-    font-family: sans-serif;
-    margin-top: 0;
-    margin-bottom: 0.5em;
+    span.S:hover {
+        color: rgb(196, 52, 52);
+        transition-delay: 0s;
+    }
+    span.O:hover {
+        color: rgb(238, 130, 58);
+        transition-delay: 0s;
+    }
+    span.R:hover {
+        color: rgb(255, 206, 72);
+        transition-delay: 0s;
+    }
+    span.A1:hover {
+        color: rgb(85, 145, 61);
+        transition-delay: 0s;
+    }
+    span.K:hover {
+        color: rgb(18, 114, 131);
+        transition-delay: 0s;
+    }
+    span.A2:hover {
+        color: rgb(66, 78, 129);
+        transition-delay: 0s;
+    }
+    span.N:hover {
+        color: rgb(129, 87, 150);
+        transition-delay: 0s;
+    }
+    span.G:hover {
+        color: rgb(204, 71, 100);
+        transition-delay: 0s;
+    }
+
+    /* ----------Contact----------- */
+      a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        background: linear-gradient(to right, papayawhip, papayawhip 50%, black 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        font-size: 3vw;
+      }
+
+      a:hover {
+        background-position: 0 100%;
+      }
+
+    #contact {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2em;
     }
     
-    .date-range {
-    font-family: sans-serif;
-    font-style: italic;
+    
+
+    /* -----------About----------- */
+    #about {
+        transition-delay: 0.5s;
+        color: papayawhip;
+    }
+
+    #about:hover {
+        color: rgb(196, 52, 52);
+        transition-delay: 0s;
+        margin-bottom: 0.25em;
+        border-bottom: rgb(196, 52, 52) solid 2px;
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        font-size: 6vw;
+    }
+
+    /* ----------Experience---------- */
+    #experience {
+        transition-delay: 0.5s;
+        color: papayawhip;
+    }
+
+    #experience:hover {
+        color: rgb(238, 130, 58);
+        transition-delay: 0s;
+        margin-bottom: 0.25em;
+        border-bottom: rgb(238, 130, 58) solid 2px;
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        font-size: 6vw;
+    }
+
+    #experience-container h3,
+    #education-container h3 {
+        margin-top: 25px;
+    }
+
+    
+
+    /* ---------Skills--------- */
+    #skills {
+        transition-delay: 0.5s;
+        color: papayawhip;
+    }
+
+    #skills:hover {
+        color: rgb(255, 206, 72);
+        transition-delay: 0s;
+        margin-bottom: 0.25em;
+        border-bottom: rgb(255, 206, 72) solid 2px;
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        font-size: 6vw;
+    }
+
+    #skills-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        max-width: 500px;
+        padding-left: 70px;
+    }
+    
+    .skills-text {
+        width: 100%;
+    
+    }
+
+    /* ----------Education---------- */
+    #education {
+        transition-delay: 0.5s;
+        color: papayawhip;
+    }
+
+    #education:hover {
+        color: rgb(85, 145, 61);
+        transition-delay: 0s;
+        margin-bottom: 0.25em;
+        border-bottom: rgb(85, 145, 61) solid 2px;
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        font-size: 6vw;
+    }
+
+    #education-container {
+        margin-bottom: 50px;
+    }
+
+    /* ----------Paragraphs / Lists--------- */
+    p,
+    h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        padding-left: 20px;
+        margin: auto;
+        max-width: 700px;
+        }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        padding-left: 30px;
+    }
+
+    li {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h3:hover {    
+        color:papayawhip;
     }
 
 }
+
+/* vw = viewport width, allows to resize according to size of window */
