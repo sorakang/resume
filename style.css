@@ -308,7 +308,20 @@ section img {
         color:papayawhip;
     }
 
+    @media only print {
+        body {
+        background: white;
+        min-height: 0px;
+    }
+        img {
+            display: none !important;
+        }
+        * {
+            display: none !important;
+        }
+    }
 }
+
 
 /* vw = viewport width, allows to resize according to size of window */
 /*     h1:hover {
@@ -325,3 +338,4 @@ section img {
             -webkit-transform-origin: center center;
         }
     } */
+
