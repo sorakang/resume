@@ -312,12 +312,15 @@ section img {
         body {
         background: white;
         min-height: 0px;
-    }
+        }
         img {
-            display: none !important;
+            display: none;
         }
         * {
-            display: none !important;
+            display: none;
+        }
+        section {
+            display: none;
         }
     }
 }
