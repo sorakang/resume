@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sora Kang Resume</title>
+    <link rel="stylesheet" href="/Resume/style.css">
+</head>
+
+<body>
+    <!-- Images -->
+    <section>
+
+        <img src="/Resume/images/sun.svg" 
+        id="sun">
+        <img src="/Resume/images/hills1-01.svg" 
+        id="hills1">
+        <img src="/Resume/images/hills2.svg" 
+        id="hills2">
+        <img src="/Resume/images/cloud1.svg" 
+        id="cloud1">
+        <img src="/Resume/images/cloud2.svg" 
+        id="cloud2">
+        <img src="/Resume/images/cloud3.svg" 
+        id="cloud3">
+    </section>
+    <script type="text/javascript">
+        
+        // JS - attaching names
+        let sun = document.getElementById("sun")
+        let hills1 = document.getElementById("hills1")
+        let hills2 = document.getElementById("hills2")
+        let cloud1 = document.getElementById("cloud1")
+        let cloud2 = document.getElementById("cloud2")
+        let cloud3 = document.getElementById("cloud3")
+
+        // JS - interactive scrolling with images
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            let speed = 10000
+
+            sun.style.top = value * 0.5 + 'px';
+            sun.style.left = -value * 0.15 + 'px';
+            hills1.style.top = value * 0.3 + 'px';
+            hills1.style.left = -value * 0.15 + 'px';
+            hills2.style.top = value * 0.15 + 'px';
+            hills2.style.left = value * 0.1 + 'px';
+            cloud1.style.left = -value * 0.5 + 'px';
+            cloud2.style.left = value * 0.5 + 'px';
+            cloud3.style.left = -value * 1 + 'px';
+            
+        })
+
+    </script>
+
+    <!-- Name -->
+    <h1>
+        <span class="S">S</span>
+        <span class="O">O</span>
+        <span class="R">R</span>
+        <span class="A1">A</span>
+        <span class="space">&nbsp;</span>
+        <span class="K">K</span>
+        <span class="A2">A</span>
+        <span class="N">N</span>
+        <span class="G">G</span>
+    </h1>
+
+    <!-- Contact Info -->
+    <div id="contact">
+        <p><a href="mailto:ckang@phx.yearup.org" id="email">ckang@phx.yearup.org</a></p> 
+        <p><a href="tel:+5555551234" id="phone">(555)555-1234</a></p>
+    </div>
+
+    <!-- About -->
+    <div id="about-container">
+        <h2 id="about">About</h2>
+        <p>An aspiring game developer and Gateway Community College student partaking in the Year Up Program in the programming track. 
+            Always ready to learn and adapt to new situations, a hard worker, and capable of staying steady in high stress situations.</p>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience-container">
+        <h2 id="experience">Experience</h2>
+        <h3>Freelance Illustrator</h3>
+        <p><em>2013 - current</em></p>
+        <p>Designed and illustrated icons, logos, backgrounds, and images for multiple clients, 
+            including local Arizona businesses such as Sushi Ken, Hachi Ramen, Drunken Tiger, Maki Box, and Mikado Sushi.
+            Illustrated complete childrens booklet for the Church of the Cross children's group.</p>
+        <h3>Freelance Web Designer</h3>
+        <p><em>2019 - current</em></p>
+        <p>Designed multiple innovative websites for local Arizona businesses and upcoming organizations.</p>
+        <h3>Freelance Game Concept Artist and Developer</h3>
+        <p><em>2017 - current</em></p>
+        <p>Created immersive concept art and programmed using C# and Unity Hub for several projects for several clients.</p>
+        <h3>Community Leader</h3>
+        <p><em>2017 - current</em></p>
+        <p>Met with a community bi-weekly for creativity and conflict resolution exercises. 
+            Gained experience that promoted character skill and growth. 
+            Learned to access the proper tools and steps to resolve situations.</p>
+        <h3>Customer Service Manager</h3>
+        <p><em>2013 - 2021</em></p>
+        <p>Lead a small team of employees, supervising and training. Capable of handling stressful situations in a calm manner.</p>
+        <h3>Community Server Moderator</h3>
+        <p><em>2021 - current</em></p>
+        <p>Heavily involved in an online community for educational pursuit. 
+            Readily available for fellow community members problems or questions, 
+            as well as offering resources and information.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <h2 id="skills">Skills</h2>
+    <div id="skills-container">
+        <div class="skills-text">
+            <ul>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+                <li>Fast Learner</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Creativity</li>
+                <li>Customer Service</li>
+                <li>Time Management</li>
+                <li>Adaptablility</li>
+                <li>Typography</li>
+                <li>Marketing</li>
+                <li>Traditional Art</li>
+                <li>Digital Art</li>
+                <li>Project Management</li>
+            </ul>  
+        </div>
+        <div class="skills-text">
+            <ul>
+                <li>Microsoft Word</li>
+                <li>Microsoft Excel</li>
+                <li>Server Moderator</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C#</li>
+                <li>Javascript</li>
+                <li>Photoshop</li>
+                <li>Clip Paint Studio</li>
+                <li>Paint Tool SAI</li>
+                <li>Illustrator</li>
+                <li>After Effects</li>
+                <li>InDesign</li>
+                <li>Unity</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education-container">
+    <h2 id="education">Education</h2>
+        <h3>Perry High School</h3>
+        <p><em>2011 - 2013</em></p>
+        <h3>ASU - Korean Studies Certificate</h3>
+        <p><em>2013 - 2015</em></p>
+        <h3>Chandler Gilbert Community College</h3>
+        <p><em>2016 - 2017</em></p>
+        <h3>Mesa Community College</h3>
+        <p><em>2017 - 2019</em></p>
+        <h3>Gateway Community College</h3>
+        <p><em>2021 - current</em></p>
+    </div>
+
+    
+
+</html>
+<!-- there's a big difference between support and help -->
+<!-- CPLC and Y-Achievers can help with gas cards and add a second stipend with internship -->
+<!-- VR Vocational Rehab help with accomodations for disabilities, look into it after adhd eval -->
+<!-- STS Student Advocate - leadership opportunity, email SBrooks@Yearup.org -->
