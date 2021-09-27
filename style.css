@@ -173,9 +173,9 @@ section img {
         display: inline-block;
         overflow: hidden;
         background: linear-gradient(to right, papayawhip, papayawhip 50%, black 50%);
-        /* background-clip: text;
+        background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; */
+        -webkit-text-fill-color: transparent;
         background-size: 200% 100%;
         background-position: 100%;
         transition: background-position 275ms ease;
